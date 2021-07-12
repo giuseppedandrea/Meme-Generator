@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.pt-nav {
+  padding-top: 76px;
+}
+
+.fixed-bottom-right {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1030;
+}
+
+.meme-container {
+  position: relative
+}
+
+.meme-textarea {
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meme-textarea-border {
+  border-width: thin;
+  border-style: dotted;
+  border-color: red;
+}
