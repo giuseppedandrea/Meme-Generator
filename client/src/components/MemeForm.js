@@ -129,8 +129,8 @@ function MemeForm(props) {
                   <Form.Group as={Row} controlId="controlVisibility">
                     <Form.Label column sm={2}>Visibility</Form.Label>
                     <Col sm={10}>
-                      <Form.Check type="radio" name="visibility" value={1} checked={isPublic} label="Public" onChange={handleChangeVisibility} disabled={location.state && location.state.userId !== props.user.id && !location.state.isPublic} />
-                      <Form.Check type="radio" name="visibility" value={0} checked={!isPublic} label="Protected" onChange={handleChangeVisibility} disabled={location.state && location.state.userId !== props.user.id && !location.state.isPublic} />
+                      <Form.Check type="radio" id="controlVisibility1" name="visibility" value={1} checked={isPublic} label="Public" onChange={handleChangeVisibility} disabled={location.state && location.state.userId !== props.user.id && !location.state.isPublic} />
+                      <Form.Check type="radio" id="controlVisibility2" name="visibility" value={0} checked={!isPublic} label="Protected" onChange={handleChangeVisibility} disabled={location.state && location.state.userId !== props.user.id && !location.state.isPublic} />
                     </Col>
                   </Form.Group>
 

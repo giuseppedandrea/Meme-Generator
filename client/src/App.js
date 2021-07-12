@@ -82,6 +82,8 @@ function App() {
     if (err.error) {
       setMessage({ msg: err.error, type: "danger" });
     }
+
+    setTimeout(() => setMessage(""), 5000);
   }
 
   const addMeme = async (meme) => {

@@ -286,7 +286,8 @@ Response body: An array of objects, each describing a meme.
     "text1": "Text1",
     "text2": "Text2",
     "text3": null,
-    "userName": "Paolo Russo"},
+    "userName": "Paolo Russo"
+  },
   ...
 ]
 ```
@@ -377,12 +378,15 @@ Response body: The number of changes in the memes list (1 if the meme was succes
 ## Database Tables
 
 - Table `fonts` - contains list of fonts
+  - `id`
   - `fontFamily`
   - `fontSize`
 - Table `colors` - contains list of colors
+  - `id`
   - `name`
   - `colorHex`
 - Table `templates` - contains list of templates (predefined background images)
+  - `id`
   - `name`
   - `imagePath`
   - `width`
@@ -391,6 +395,7 @@ Response body: The number of changes in the memes list (1 if the meme was succes
   - `textArea2`: (x, y, width, height) format
   - `textArea3`: (x, y, width, height) format
 - Table `memes` - contains list of memes created by creators
+  - `id`
   - `templateId`
   - `userId`
   - `title`
@@ -401,6 +406,7 @@ Response body: The number of changes in the memes list (1 if the meme was succes
   - `text2`
   - `text3`
 - Table `users` - contains list of users (creators)
+  - `id`
   - `name`
   - `username`
   - `passwordHash`

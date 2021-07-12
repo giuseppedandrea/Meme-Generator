@@ -63,9 +63,9 @@ function MemeItem(props) {
       <ListGroup.Item variant={props.meme.statusVariant} as={"div"} role={"button"} action onClick={handleModalShow}>
         <div className="d-flex justify-content-between">
           <div className="align-self-center d-flex align-items-center">
+            <span className={"mr-2"}>{props.meme.title}</span>
             {(props.meme.userId === props.user.id) && <BsFillPersonFill title={"Own Meme"} className={"mr-2"} />}
             {!props.meme.isPublic && <BsFillLockFill title={"Protected Meme"} className={"mr-2"} />}
-            <span>{props.meme.title}</span>
           </div>
           {props.loggedIn &&
             <div className="align-self-center">
